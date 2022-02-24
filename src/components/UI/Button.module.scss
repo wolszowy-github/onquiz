@@ -1,0 +1,22 @@
+@use "../../utils/animations/keyframes.scss";
+
+.button {
+    height: 35px;
+    width: 110px;
+    border: 1px solid #000;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+
+
+    &.main {
+        background-color: #000;
+        animation: bounceAnimation 1s ease-in-out infinite;
+    }
+
+    &.quiz {
+        background-color: #333333;
+        border-color: #fff;
+        margin: 5px;
+    }
+}

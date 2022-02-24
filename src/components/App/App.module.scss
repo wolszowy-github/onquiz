@@ -1,0 +1,22 @@
+.app {
+  position: relative;
+  
+  .viewport-info {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+
+    @media only screen and (max-width: 425px) {
+       display: none;
+    }
+  }
+}
+

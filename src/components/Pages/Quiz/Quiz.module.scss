@@ -1,0 +1,47 @@
+@use "../../../utils/animations/keyframes.scss";
+$top-text-height: 40px;
+
+.quiz {
+    background-color: #333333;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    .top-text {
+        letter-spacing: 5px;
+        font-size: 10px;
+        text-transform: uppercase;
+        height: $top-text-height;
+        padding: 10px;
+    }
+
+    .loader {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .question {
+        animation: bounceAnimation 1s ease-in-out infinite;
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .container { 
+        &-outer{
+            height: calc(100% - $top-text-height); // 25px is top text height
+            display: flex;
+            align-items: center;
+        }
+
+        &-inner{
+            height: 170px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+}

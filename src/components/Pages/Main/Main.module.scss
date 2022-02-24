@@ -1,0 +1,38 @@
+@use "../../../utils/animations/keyframes";
+
+.main {
+    background: url('../../../assets/bgImg.png') no-repeat;
+    background-position: -45px bottom;
+    background-size: 140%;
+    height: 100vh;
+    position: relative;
+
+    h1 {
+        animation: slideInAnimation .3s ease-in-out forwards;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(180deg, rgba(9,63,121,0) 50%, rgba(248,246,250,1) 100%);
+    }
+
+    h1 {
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+    
+    .sidenote {
+        font-size: 12px;
+        color: gray;
+        margin-top: 20px;
+    }
+}
