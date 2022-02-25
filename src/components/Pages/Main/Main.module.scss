@@ -1,7 +1,7 @@
 @use "../../../utils/animations/keyframes";
 
 .main {
-    background: url('../../../assets/bgImg.png') no-repeat;
+    background: url('../../../../public/assets/bgImg.png') no-repeat;
     background-position: -45px bottom;
     background-size: 140%;
     height: 100vh;

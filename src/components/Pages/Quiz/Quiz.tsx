@@ -4,7 +4,6 @@ import { IQuizData, IQuestion, IAnswer, IShoe, TRatingIncrease } from '../../../
 import styles from './Quiz.module.scss';
 import Button, { ButtonType } from '../../UI/Button';
 import { useHistory } from 'react-router-dom';
-import LoaderImg from '../../../assets/loader.gif'
 
 interface IQuiz {
   setShoesRating: (shoes: IShoe[]) => void;
@@ -77,7 +76,7 @@ const Quiz: FunctionComponent<IQuiz> = ({ setShoesRating, shoesRating }) => {
   const loader = (
     <div className={styles['loader']}>
       We're running to get your results.
-      <img src={LoaderImg} alt="" />
+      <img src={`${process.env.PUBLIC_URL}/assets/loader.gif`} alt="" />
     </div>
   )
 

@@ -1,6 +1,6 @@
 .result {
     background-color: #333333;
-    height: 100vh;
+    height: 100%;
     color: #fff;
     padding: 20px;
 
@@ -10,10 +10,20 @@
     }
 
     ul {
-        padding: 0 20px;
+        padding: 0;
+        list-style: none;
 
         li {
             padding: 0;
+            background-color: #fff;
+            color: #000;
+            font-weight: bold;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        img {
+            max-width: 160px;
         }
     }
 }

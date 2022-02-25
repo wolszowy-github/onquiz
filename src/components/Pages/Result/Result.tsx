@@ -31,7 +31,11 @@ const Result: FunctionComponent<IResult> = ({ shoeRating }) => {
       <h4>Here is the list of all of our shoes:</h4>
       {sortedResults.map(shoe => (
         <ul key={shoe.id}>
-          <li>{shoe.name}</li>
+          <li>{shoe.name} 
+            <div>
+              <img src={`${process.env.PUBLIC_URL}/assets/${shoe.id}.png`} alt="" />
+            </div>
+          </li>
         </ul>
       ))}
     </div>
